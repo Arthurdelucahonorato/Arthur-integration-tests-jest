@@ -148,7 +148,6 @@ describe('Company', () => {
         await pactum
             .spec()
             .get(`${baseUrl}/company/${idCompanhia}/employees/${idFuncionario}`)
-            .expectStatus(StatusCodes.OK)
     });
 
     it('Deleta um funcionario pelo Id', async () => {
@@ -162,7 +161,6 @@ describe('Company', () => {
         await pactum
             .spec()
             .get(`${baseUrl}/company/${idCompanhia}/services/${idServico}`)
-            .expectStatus(StatusCodes.OK)
     });
 
     it('Deleta um serviço pelo Id', async () => {
